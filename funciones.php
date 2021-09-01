@@ -8,7 +8,7 @@ if (isset($_GET['enviar'])) {
     echo "<br><br><br> El tamaño de los numeros es: $numero <br><br><br>";
 
     $people=new funcion($numero);
-}//Llave de la clase
+
 
 
 
@@ -28,23 +28,46 @@ if (isset($_GET['enviar'])) {
     }
 
 
-
+    
 
     function Promedio($nums){
         $suma=0;
         for ($i=0; $i <count($nums) ; $i++) { 
             $suma=0+$nums[$i];
+            $resultado=$suma/$_GET['number'];
         }
-        return $suma;
+        return $resultado;
+    }
+
+    
+    function mayor($nums){
+        $mayor=0;
+
+        foreach ($nums as $key){
+            if ($mayor < $key){
+                $mayor = $key;
+            }
+            return $mayor;
+        }
+    }
+
+
+    function menor($nums){
+        $menor=0;
+
+        foreach ($nums as $key){
+            if ($menor > $key){
+                $mayor = $key;
+            }
+            return $menor;
+        }
     }
 
 
 
-
-
-
-
-    echo "<br><br> la promedio es: " .Promedio($numeros).'<br>';
-
+    echo "<br><br> la promedio es: " .Promedio($numeros);
+    echo "<br><br> la Mayor es: " .mayor($numeros);
+    echo "<br><br> la Menor es: " .menor($numeros);
+}//Llave de la clase
 
 ?>

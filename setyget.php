@@ -3,7 +3,6 @@
 class funcion {
     
     public $numero;
-    public $numeros=array();
 
 
     public function setnumero($numero)
