@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/.css">
-    <title>FUNCIONES Y ARREGLOS</title>
+    <title>FUNCIONES Y ARREGLOS versio2</title>
 </head>
 <body>
     <form action="" method="GET" action="funciones.php">
